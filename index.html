@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Asturias</h1>
+
+        <div id="forms">
+            <div class="card">
+                <h2>El club viejuner</h2><br>
+
+                <form action="#" method="post">
+                    <ol>
+                        <fieldset>
+                            <legend>Tú:</legend>
+
+                            <li><input type="text" placeholder="Nombre"></li>
+                            <li><input type="text" placeholder="Apellidos" autofocus></li>
+                            <li><input type="number" placeholder="Edad" min="0"></li>
+                            <li>
+                                <label>Sexo</label>
+                                <input type="radio" id="masc" name="sexo" value="M">
+                                <label for="masc">M</label>
+                                <input type="radio" id="fem" name="sexo" value="F">
+                                <label for="fem">F</label>
+                            </li>
+                            <li>
+                                <label for="viejuner">Me siento viejuner</label>
+                                <input type="checkbox" id="viejuner" required>
+                            </li>
+                            <li><textarea placeholder="Escribe algo sobre tí"></textarea></li>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Tus circunstancias:</legend>
+
+                            <li><input type="email" placeholder="Dirección email"></li>
+                            <li><input type="tel" id="tel" placeholder="Tlf"></li>
+                        </fieldset>
+
+                        <li>
+                            <input type="submit" value="Solicitar unirme">
+                            <input type="reset" value="Resetear">
+                        </li>
+                    </ol>
+                </form>
+            </div>
+
+            <div class="card">
+                <h2>Los ladronzuelos de bicicletas</h2><br>
+
+                <form action="#" method="post">
+                    <ol>
+                        <li><input type="date" id="fecha"></li>
+                        <li><input type="time" id="hora"></li>
+                        <li><input type="color" id="color"></li>
+                        <li>
+                            <label>Rango de precio:</label>
+                            <input type="range" id="precio">
+                        </li>
+                        <li>
+                            <label for="cars">Tipo de bicicleta:</label>
+                            <select name="tipoBici" id="tipoBicis">
+                                <optgroup label="Paseo">
+                                    <option value="senorial">Señorial</option>
+                                    <option value="antiplebe">Anti-plebeyos</option>
+                                    <option value="hombro">PorEncimaDelHomfa-border</option>
+                                </optgroup>
+                                <optgroup label="Montaña">
+                                    <option value="gamu">Gamusinos</option>
+                                    <option value="huele">Hueleflores premium</option>
+                                    <option value="fango">Fango lover</option>
+                                </optgroup>
+                                <optgroup label="Carreras">
+                                    <option value="metro">Metroymedio</option>
+                                    <option value="fluor">Fluorescente edition</option>
+                                    <option value="grupo">Grupitos</option>
+                                </optgroup>
+                            </select>
+                        </li>
+                        <li>
+                            <select id="" multiple>
+                                <option value="ruedines">Ruedines</option>
+                                <option value="pegatinas">Pegatinas</option>
+                                <option value="cestita">Cestita</option>
+                                <option value="bomba">Bomba de aire</option>
+                                <option value="timbre">Timbre</option>
+                                <option value="foco">Foco</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="marca">¿Qúe marca era?</label>
+                            <input list="marcas" id="marca">
+
+                            <datalist id="marcas">
+                              <option value="specialized">
+                              <option value="trek">
+                              <option value="merida">
+                              <option value="scott">
+                              <option value="giant">
+                              <option value="orbea">
+                            </datalist>
+                        </li>
+                        <li><input type="submit" value="Enviar"></li>
+                    </ol>
+                </form>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
+
+</html>
